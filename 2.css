@@ -1,0 +1,377 @@
+body{
+  background-image: url(img/ijoijo.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.topnav lu{
+  font-size: 20px;
+}
+
+.topnav {
+  background-color: #538D22;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #245501;
+  
+  position: sticky;/*ttp muncul walau di scroll*/
+  top: 0; 
+  z-index: 1; /*biar berada paling atas*/
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left; /*membuat tata letak horizontal */
+  display: block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #AAD576;
+  color: #245501;
+  border-left: 5px solid white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #245501;
+  color: white;
+  width: 100px;
+}
+
+.topnav a.active:hover {
+  background-color: #73A942;
+  color: #245501;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/*background daun*/
+div.top {
+  background-image: url(img/daun\ ijo.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  padding: 50px;
+}
+
+
+/*tulisan di background daun*/
+h1{
+  top: 8px;
+  left: 16px;
+  text-transform: capitalize; /*tiao kata huruf kapital*/
+  margin-top: 0%;
+  text-align: center;
+  color: #AAD576;
+  font-family: "Brush Script MT", cursive;
+  font-size: 10vw;
+  text-shadow: 3px 3px 0 #000;
+}
+
+/*tata letak box biar ga acak*/
+*  {
+  box-sizing: border-box;
+}
+
+/*kotak kiri*/
+/*tampilan kotak kiri jika ada kursor*/
+.left a:hover {
+  color: rgb(20, 54, 1);
+  box-shadow: inset 200px 0 0 0  rgb(83, 141, 34);
+  background-color: rgb(246, 246, 66, 0.5);
+}
+
+/*biar tidak acak*/
+.left {
+  float: left; /*membuat tata letak horizontal */
+  width: 20%; 
+}
+
+/*kiri table*/
+.left a {
+  width: 20%;
+  background-color: #AAD576;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: left;
+  border-style: solid;
+  border-width: 1.5px;
+  border-radius: 10px;
+  font-size: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+  
+  box-shadow: inset  0 0 0 rgb(76, 76, 223);
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out; /*box shadow memunculkan warna gerak*/
+}
+
+/*kotak tengah bawah*/
+.mid {
+  float: left; /*membuat tata letak horizontal */
+  width: 60%;
+  padding: 0 20px;
+  margin-top: 7px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: rgb(0, 0, 0, 0.5);
+  height: auto;
+  border: 1px solid black;
+  outline-style: dotted;
+  outline-color: black;
+}
+
+/*buat huruf paling depan berbeda sndiri*/
+p.font::first-letter {
+  color:#AAD576;
+  font-size: 200%;
+  text-transform: capitalize; 
+}
+
+.mid h2 {
+  font-family: "Brush Script MT", cursive;
+  text-transform: capitalize;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-shadow: 3px 3px #000
+}
+
+.mid p{
+  margin: 0 0 20px 0;
+  word-spacing: none;
+}
+
+div > .font { /*child combinator digunakan untuk membatasi seleksi elemen*/
+  color: whitesmoke;
+}
+
+/*model tulisan*/
+div p.font{
+  font-family: "Times New Roman";
+}
+
+/*kotak kanan*/
+.right {
+  background-color: #AAD576;
+  color: black;
+  float: left;
+  width: 19%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: left;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+.right h2{
+  padding-top: 0%;
+}
+
+ul.kotak {
+  list-style-type: square;
+}
+
+ul.bunder{
+  list-style-type: circle;
+}
+
+div.table h2{
+  color: #000;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 15px;
+}
+
+th{
+  text-transform: uppercase; /*tulisan huruf kapital*/
+  background-color: #245501;
+  color: white;
+  text-align: center;
+  height: 70px;
+}
+
+div.table{
+  overflow: auto;
+}
+
+table, td, th {
+  background-color: #245501;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+td{
+  text-transform: capitalize;
+  background-color: #73A942;
+  color: black;
+}
+
+td:hover{
+  text-transform: capitalize;
+  background-color:black ;
+  color: white;
+  
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/*galery*/
+
+.judul-galery{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.gallery{
+    display: flex; /*membuat semua elemen anak di dalamnya menjadi "flex item"*/
+    flex-wrap: wrap;/*elemen-elemen flex item akan dibungkus ke baris atau kolom berikutnya jika mereka tidak cukup muat dalam ruang yang tersedia.*/
+    gap: 16px;
+    max-width: 800px;
+    border: 1px solid black;
+    padding: 16px;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.image-container{
+    flex: 1 1 calc(33.333% - 16px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image-container img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+.image-container img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/*font dalam foto*/
+.image-container p{
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+/*form */
+.form{
+  background: #AAD576;
+  color: #000;
+  width: 90%;
+  height: 90%;
+  padding: 2rem;
+}
+
+h2.judul-form{
+  background: rgb(36, 85, 1);
+  color: white;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  cursor: default;
+}
+
+form, input, textarea, button{
+  font-family: inherit;
+  font-size: initial;
+}
+
+/*kotak dibawah text*/
+.form-group label{
+  display: block;
+  margin: 2rem 0 0.5rem 0;
+}
+
+/*kotak*/
+.form-group input,
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: 0;
+  transition: border 0.15s
+}
+
+.form-group input,
+.form-group input {
+  height: 4.6rem;
+}
+
+.form-group textarea{
+  resize: vertical;
+}
+
+.submit{
+  background: #245501;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background:#102700;
+}
+
+/*form  focus jika mengklik */
+.form-group input:focus,
+.form-group textarea:focus{
+  border: 1px solid #000;
+}
+
+
+@media only screen and (max-width: 620px) {
+  .left, .mid, .right, .table1, .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .image-container {
+      flex: 1 1 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 480px){
+  .image-container {
+      flex: 1 1 100%;
+  }
+}
